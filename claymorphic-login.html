@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        *{
+            margin :0px;
+            padding:0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(55,55,65);
+            color:white;
+            font-family :consolas;
+            font-size:20px;
+        }
+        form{
+            height:fit-content;
+            width: fit-content;
+            position:relative;
+            top:20vh;
+            border-radius: 30px;
+            padding: 20px;
+            background-color: rgb(54,54,65);
+            box-shadow:
+            inset 5px 5px 15px rgb(85,85,85),
+            inset 3px 3px 5px rgb(0,0,0),
+            5px 5px 50px rgb(24,24,24),
+            inset -3px -3px 5px rgb(22,22,22),
+            inset -5px -5px 15px rgb(34,34,34);
+        }
+        div{
+            margin:20px;
+        }
+        input{
+            display:inline-block;
+            height:30px;
+            outline:none;
+            border:none;
+            border-radius:20px;
+            background-color: rgb(192,192,192);
+            padding-left: 10px;
+            box-shadow:
+            inset 3px 3px 5px white,
+            inset -3px -3px 5px rgb(71,71,71),
+            5px 5px 5px rgb(36,36,36);
+        }
+        [type=submit]{
+            width:100%;
+            background-color: rgb(20,120,220);
+            color:white;
+            box-shadow:
+            inset 3px 3px 3px rgb(89,172,255),
+            inset -3px -3px 3px rgb(16,82,148),
+            5px 5px 5px rgb(36,36,36);
+        }
+        label{
+            display:inline-block;
+            height:30px;
+            width:30px;
+            background-color: rgb(20,120,220);
+            border-radius: 50%;
+            box-shadow:
+            inset 3px 3px 3px rgb(89,172,255),
+            inset -3px -3px 3px rgb(16,82,148),
+            5px 5px 5px rgb(36,36,36);
+        }
+        [for=uname]::before{
+            content:"person";
+            font-family:"Material Icons";
+            position:relative;
+            top:5px;
+        }
+        [for=pswd]::before{
+            content:"vpn_key";
+            font-family:"Material Icons";
+            position:relative;
+            top:5px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <form action="#">
+            <caption>LOGIN</caption>
+            <div>
+                <label for="uname"></label>
+                <input type="text" name="uname">
+            </div>
+            <div>
+                <label for="pswd"></label>
+                <input type="text" name="pswd">
+            </div>
+            <div>
+                <input type="submit" value="LOGIN">
+            </div>
+        </form>
+    </center>
+</body>
+</html>
